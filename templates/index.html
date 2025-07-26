@@ -1,0 +1,15 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+</head>
+<body>
+<img src="{{ url_for('static', filename='avatar.png') }}" alt="Avatar" width="150">
+    <h2>Enter your birth year:</h2>
+    <form action="/result" method="post">
+        <input type="number" name="birth_year" required>
+        <button type="submit">Calculate Age</button>
+    </form>
+</body>
+</html>
